@@ -1,0 +1,14 @@
+/* Main stylesheet for Secret Agent Supply, Inc., project for Codecademy
+   Unit 5, days 6-9
+   J. Stuart Harris
+ */
+
+/* General style code for the entire website - defaults
+ */
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  margin: 0;
+}
