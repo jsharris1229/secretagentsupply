@@ -22,6 +22,39 @@ body {
   margin: 0 auto;
 }
 
+/* Top identity bar section
+ #identitybar div div & scan
+ */
+#identitybar {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+}
+
+#identitybar div {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  border: 1px solid green;
+}
+
+#identitybar div span {
+  color: white;
+  padding: .66rem 0 .66rem 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: .5rem;
+}
+
+.logo img{
+  height: 1.5rem;
+  border: 1px solid lightblue;
+}
+
 /* ***** Location section
  */
 #location {
