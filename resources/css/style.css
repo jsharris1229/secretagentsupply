@@ -36,7 +36,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-content: center;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
 }
 
 #identitybar div span {
@@ -52,7 +52,7 @@ body {
 
 .logo img{
   height: 1.5rem;
-  border: 1px solid lightblue;
+  /*border: 1px solid lightblue;*/
 }
 
 /* ***** Banner section
@@ -98,6 +98,46 @@ body {
   padding-left: 3rem;
 }
 
+/* ***** Menu bar section
+   #menubar div nav
+ */
+#menubar {
+  display: flex;
+  width: 100%;
+  background-color: firebrick;
+}
+
+#menubar div { /* the .bodycontainer div */
+  display: flex;
+}
+
+#menubar div nav {
+  display: inline-flex;
+  align-items: center;
+  height: 3rem;
+  border: 1px solid green;
+}
+
+#menubar div nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid purple;
+  /*padding: .75rem 0;*/
+}
+
+#menubar div nav ul li{
+  display: inline-block;
+}
+
+#menubar div span {
+  display: inline-block;
+}
+
+.narrowscreen {
+  padding: .75rem 0;
+}
+
 /* ***** Location section
  */
 #location {
@@ -118,7 +158,7 @@ body {
   width: 35%;
   margin: 3rem 0 4rem 0;
 
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 /* #location div div span */
 .locdes {
@@ -130,7 +170,7 @@ body {
 
 .data {
   width: 100%;
-  color: purple;
+  color: black;
 }
 
 /* ***** Footer section
@@ -149,5 +189,17 @@ footer div {
   align-items: center;
   color: white;
   height: 5rem;
-  border: 1px solid lightgreen;
+  /*border: 1px solid lightgreen;*/
+}
+
+@media only screen and (min-width: 470px) {
+  .narrowscreen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .widescreen {
+    display: none;
+  }
 }
