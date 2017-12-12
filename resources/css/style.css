@@ -267,7 +267,7 @@ footer div {
    }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) { /* Tablet sized screens */
   body {
     color: dodgerblue;
   }
@@ -287,12 +287,16 @@ footer div {
     display: none;
   }
 
-  @media only screen and (max-width: 470px) {
+  @media only screen and (max-width: 470px) { /* Phone size screens */
     body {
       color: orange;
     }
     footer div {
       justify-content: center;
+    }
+    /* ***** banner section */
+    #banner {
+      height: 15rem;
     }
     #banner div div {
       height: 4.3rem;
@@ -300,9 +304,40 @@ footer div {
     }
     #banner div div h1 {
       font-size: 1rem;
+      padding-left: 2rem;
     }
     #banner div div h3 {
       font-size: .77rem;
+      padding-top: 1rem;
+      padding-left: 2rem;
+  }
+    /* ***** featured products section */
+    #featured div {
+      justify-content: center;
+    }
+    #featured div div{
+      width: 90%;
+    }
+    #featured div .thermal,
+    #featured div .watch {
+      display: none;
+    }
+    /* ***** locations section */
+    #location div {
+      display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+      width: 100%;
+    }
+    #location div div {
+      width: 90%;
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0 0 2rem 0;
+    }
+    #location div div span {
+      display: block;
+      margin-top: .5rem;
     }
   }
 }
