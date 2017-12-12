@@ -114,15 +114,16 @@ body {
 #menubar div nav {
   display: inline-flex;
   align-items: center;
+  width: 100%;
   height: 3rem;
-  border: 1px solid green;
+  /* border: 1px solid green; debug box */
 }
 
 #menubar div nav ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  border: 1px solid purple;
+  /* border: 1px solid purple; debug box */
   /*padding: .75rem 0;*/
 }
 
@@ -137,6 +138,69 @@ body {
 .narrowscreen {
   padding: .75rem 0;
 }
+
+/* ***** Featured products section
+ */
+ #featured {
+   display: flex;
+   margin: 3rem 0;
+   width: 100%;
+   background-color: white;
+ }
+
+#featured div { /* Same div as class .bodycontainer */
+  display: flex;
+  justify-content: space-between;
+}
+
+#featured div div { /* same div as class .figure */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: space-between;
+  border: 4px solid black;
+  width: 30%;
+  height: 15rem;
+}
+
+#featured div div img { /* image inside divs */
+   margin: 2rem auto auto auto;
+   max-height: auto;
+   max-width: 9rem; /* spec 9rem */
+   vertical-align: middle;
+   /* border: 1px solid purple; debug box */
+ }
+
+#featured div div div { /* div below image, figure caption (.fcaption class) */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: .5rem 0;
+  color: white;
+  text-align: center;
+  background-color: black;
+  /*border: 2px solid lightblue;*/
+ }
+
+
+#featured div div .shortimg {
+  margin-top: 4.5rem;
+}
+/*
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img {
+    background: #3A6F9A;
+    vertical-align: middle;
+    max-height: auto;
+    max-width: 9rem;
+}*/
 
 /* ***** Location section
  */
@@ -188,18 +252,57 @@ footer div {
   justify-content: flex-start;
   align-items: center;
   color: white;
-  height: 5rem;
+  height: 6rem;
   /*border: 1px solid lightgreen;*/
 }
-
-@media only screen and (min-width: 470px) {
-  .narrowscreen {
-    display: none;
-  }
+/* ***** Changes in size and layout for different media sizes
+ */
+@media only screen and (min-width: 1025px) {
+  /* wide: #menubar div nav; narrow: #menubar div span */
+   body {
+     color: cyan;
+   }
+   #menubar div span {
+     display: none;
+   }
 }
 
-@media only screen and (max-width: 470px) {
-  .widescreen {
+@media only screen and (max-width: 1024px) {
+  body {
+    color: dodgerblue;
+  }
+  #menubar div {
+    justify-content: center;
+  }
+  #menubar div nav {
     display: none;
+  }
+  #featured div div {
+    width: 47%;
+  }
+  #location div div {
+    width: 35%;
+  }
+  #featured div .thermal {
+    display: none;
+  }
+
+  @media only screen and (max-width: 470px) {
+    body {
+      color: orange;
+    }
+    footer div {
+      justify-content: center;
+    }
+    #banner div div {
+      height: 4.3rem;
+      width: 100%;
+    }
+    #banner div div h1 {
+      font-size: 1rem;
+    }
+    #banner div div h3 {
+      font-size: .77rem;
+    }
   }
 }

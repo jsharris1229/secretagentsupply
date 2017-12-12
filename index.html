@@ -10,11 +10,13 @@
     <title>Secret Agent Supply Inc.</title>
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+
   </head>
 
   <!-- This website consists of
     -->
   <body>
+
     <!-- The website consists of:
            - top identity bar
            - banner with background and new arrivals block
@@ -60,33 +62,38 @@
             <li class="widescreen">Contact</li>
           </ul>
         </nav>
-<!--
+
         <span class="narrowscreen">Menu
         </span>
-      -->
+
       </div>
     </div>
 
     <!-- Featured product (images) section -->
-    <div id="featured" class="bodycontainer">
+    <p style="text-align: center;">Check out our featured products!</p>
+    <div id="featured">
+      <div class="bodycontainer">
+
       <!-- Product: Exploding Pen -->
-      <figure>
+      <div class="figure">
           <img src="resources/images/pen.png" alt="Exploding Pen">
-          <figcaption>Exploding Pen</figcaption>
-      </figure>
+          <div class="fcaption">Exploding Pen</div>
+      </div>
 
       <!-- Product: Cellular Watch -->
-      <figure>
+      <div class="figure">
           <img src="resources/images/watch.png" alt="Cellular Watch">
-          <figcaption>Cellular Watch</figcaption>
-      </figure>
+          <div class="fcaption">Cellular Watch</div>
+      </div>
 
       <!-- Product: Thermal Glasses -->
-      <figure>
-          <img src="resources/images/glasses.png" alt="Thermal Glasses">
-          <figcaption>Thermal Glasses</figcaption>
-      </figure>
-    </div>
+      <div class="figure thermal">
+          <img class="shortimg" src="resources/images/glasses.png" alt="Thermal Glasses">
+          <div class="fcaption">Thermal Glasses</div>
+      </div>
+
+    </div> <!-- end .bodycontainer -->
+  </div> <!-- end #featured -->
 
     <!-- Location and store hours blocks -->
     <div id="location">
@@ -106,7 +113,7 @@
     <!-- Footer section -->
     <footer>
       <div class="bodycontainer">
-        <h4>Copyright Secret Agent Supply Inc. &copy; 2015-2017</h4>
+        <h4>Copyright Secret Agent Supply Inc.<br /> &copy; 2015-2017</h4>
       </div>
     </footer>
 
